@@ -15,7 +15,10 @@ body {
 
 
 .header {
+ display:flex;
   padding: 20px;
+  height: auto;
+  width: auto;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #2a607c;
   color: black;
@@ -23,24 +26,31 @@ body {
 
 .header h1 {
   display: inline-block;
-  font-size: 48px;
+  font-size: 58px;
 }
 
 .header div {
+  
+  
   padding-top: 15px;
   margin-right: 20px;
   float: right;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  font-size: 40px;
+ justify-content: center
 }
 
 .header div ul {
+ 
   list-style-type: none;
+  
 }
 
 .header div ul li {
-  display: inline-block;
-  margin-left: 25px;
+ 
+  margin-left: 300px;
+  /* float: right; */
+  justify-content:space-evenly;
 }
 
 a {
@@ -53,11 +63,18 @@ a {
   display: flex;
   height: 300px;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 20px;
   background-image: url("img-2.jpg");
   background-size: cover;
   background-position: center;
   
+}
+.flex-container{
+  display: flex;
+  align-items: stretch;
+  
+  padding: 5px;
+  margin-right: 20px;
 }
 
 .About-me {
@@ -70,6 +87,11 @@ a {
   background-color: #bb6700;
   color: #ffffff;
   margin-left:250px;
+
+}
+#content{
+list-style: none;
+align-items: center;
 }
 .image-0{
   display: flex;
@@ -94,7 +116,7 @@ a {
 }
 .image-2{
   display: flex;
-  object-fit: cover;
+  
   height: 580px;
   width: 45%;
   margin-top: 5px;
@@ -136,14 +158,99 @@ a {
 
  
 }
-#button1{
- 
-  height: 50px ;
-width:50px;
-background-color: #0072bb;
-border-color: red;
-color: #ffffff;
+#about 
+{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  margin-left: 50px ;
+  margin-top: 10px;
+  text-align: center;
+  background-size: cover;
+  flex-grow: 1;
 }
+
+
+#work{
+  display: flex;
+  padding: 10px;
+  margin-left: 50px ;
+  margin-top: 10px;
+ flex-flow: row wrap;
+ background-position: center;
+ text-align: center;
+}
+
+@media screen and (orientation:landscape)
+            {
+                ul {
+                list-style: none;
+                display: flex;
+            }
+            li {
+                background-color: black;
+                color:white;
+                padding: 5px;
+                width: 200px;
+                border:1px solid black;
+                border-radius: 20px;
+                margin-right: 20px;
+                font-size: 23px;
+                transition: 2s;
+            }
+            li:hover {
+                background-color: black;
+                color:white;
+                cursor:grab;
+                font-size: 30px;
+                transition:2s;
+            }
+            }
+            @media screen and (orientation: portrait)
+            {
+                ul {
+                list-style: none;
+            }
+          }
+            li {
+                background-color: black;
+                color:white;
+                padding: 5px;
+                width: 200px;
+                border:1px solid black;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                font-size: 23px;  
+                transition: 2s;
+            }
+            /*footer*/
+            footer {
+              display: flex;
+              justify-content: space-around;
+            }
+            
+            .footer__headline {
+              font-weight: bold;
+              font-family: 'Helvetica';
+            }
+            
+            .footer__list {
+              font-family: 'Helvetica';
+              list-style: none;
+              padding: 0;
+              margin: 0;
+            }
+/* .fluid{
+  width: auto;
+  height: auto; */
+  
+/* flex-flow: row wrap;
+align-items:center;
+padding: 5px;
+gap: 5px 5px; */
+/* background-size: cover; */
+
+
 
 
 
