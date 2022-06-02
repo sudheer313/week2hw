@@ -264,3 +264,10 @@ padding-right: 10%;
               justify-content: space-between;
               width: fit-content;
             }
+            /*footer r*/
+            @media(max-width: 500px){
+
+              footer{
+            flex-direction:column;
+            }
+            }
