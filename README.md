@@ -6,7 +6,7 @@ I have designed a Webpage which displays my portfolio of my projects using HTML 
 Such that I can be Job Ready.
 
 ```
- Criteria
+## Criteria
 
 I created a portfolio of my previuos work projects.
 I deloyed this application in Git Hub and when a employee clicks on my work portfolio it takes to my deployed apllication.
